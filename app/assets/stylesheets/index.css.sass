@@ -1,0 +1,338 @@
+@font-face
+  font-family: 'CodePro-Light'
+  src: url('code_pro_light.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'CodePro-Bold'
+  src: url('code_pro_bold.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'CodePro'
+  src: url('code_pro.otf') format("opentype")
+  font-weight: normal
+  font-style: normal
+
+
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background: rgba(0,0,0, 0.6)
+
+::-webkit-scrollbar-thumb
+  background: #425677
+
+
+body
+  background: #17263f
+  overflow: hidden
+
+
+.wrapper
+  width: 80%
+  margin: 0px auto
+
+.clearfix
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.relative
+  position: relative
+
+.inheritance-height
+  height: 100%
+
+
+.backgrounds
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0px
+  left: 0px
+  z-index: -1
+
+  .background
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+
+    &.moscow
+      display: block
+      background: url('/assets/backgrounds/moscow.jpg') no-repeat
+      background-size: cover
+      z-index: 3
+
+    &.pekin
+      background: url('/assets/backgrounds/pekin.jpg') no-repeat
+      background-size: cover
+
+    &.dubai
+      background: url('/assets/backgrounds/dubai.jpg') no-repeat
+      background-size: cover
+
+    &.delhi
+      background: url('/assets/backgrounds/delhi.jpg') no-repeat
+      background-size: cover
+
+    &.singapure
+      background: url('/assets/backgrounds/singapure.jpg') no-repeat
+      background-size: cover
+
+    &.barselona
+      background: url('/assets/backgrounds/barselona.jpg') no-repeat
+      background-size: cover
+
+    &.berlin
+      background: url('/assets/backgrounds/berlin.jpg') no-repeat
+      background-size: cover
+
+    &.varshava
+      background: url('/assets/backgrounds/warsaw.jpg') no-repeat
+      background-size: cover
+
+    &.hongkong
+      background: url('/assets/backgrounds/hong_kong.jpg') no-repeat
+      background-size: cover
+
+
+.topbar
+  width: 100%
+  height: 200px
+  //background: #ccc
+
+  @media screen and (max-width: 1400px)
+    //background: red
+
+    height: 100px
+
+
+
+  .logo
+    float: left
+    position: relative
+    width: 130px
+    height: 200px
+
+    @media screen and (max-width: 1400px)
+      height: 100px
+
+    //background: red
+
+    img
+      position: absolute
+      left: 0px
+      bottom: 0px
+
+      @media screen and (max-width: 1400px)
+        width: 100px
+
+
+  .navigation
+    float: right
+
+    .nav
+      float: left
+      width: 160px
+      height: 100px
+
+      padding-left: 30px
+      padding-top: 100px
+
+      //background: rgba(23, 38, 63, 0.4)
+
+      //border-right: 1px solid red
+
+      color: #eaeaea
+      font-family: 'CodePro-Light'
+      font-size: 24px
+      letter-spacing: 0.1em
+
+      cursor: pointer
+
+      transition: all 0.4s linear
+      -webkit-transition: all 0.4s linear
+
+      @media screen and (max-width: 1400px)
+        height: 80px
+        padding-top: 20px
+        font-size: 20px
+
+      &:hover
+        background: rgba(23, 38, 63, 0.8)
+
+      &.active
+        border-bottom: 10px solid #fafafa
+
+      a
+        text-decoration: none
+        color: #fff
+
+
+.intro
+  //padding-top: 200px
+  //background: #000
+  position: relative
+
+
+  .cities
+    padding: 100px 0
+    .city
+      padding-left: 12px
+      color: #eaeaea
+      font-family: 'CodePro-Light'
+      font-size: 24px
+      margin-bottom: 25px
+      letter-spacing: 0.2em
+      opacity: 0.1
+
+      @media screen and (max-width: 1400px)
+        font-size: 18px
+
+
+.slogan
+
+  //background: red
+
+  position:  absolute
+  top: 50%
+  left: 50%
+
+  margin-top: -125px
+  margin-left: -305px
+
+  width: 710px
+  height: 250px
+
+  color: #eaeaea
+  font-family: 'CodePro-Bold'
+  font-size: 51px
+  letter-spacing: 0.2em
+
+  @media screen and (max-width: 1400px)
+    width: 540px
+    margin-left: -270px
+    font-size: 42px
+
+
+.footer
+  position: fixed
+  bottom: 0px
+  left: 0px
+
+  width: 100%
+  height: 120px
+
+
+  .contacts-widget
+    float: right
+    background: #17263f
+    width: 375px
+    height: 95px
+
+    padding-left: 65px
+    padding-top: 25px
+
+
+    font-family: 'CodePro-Light'
+    color: #fafafa
+    letter-spacing: 0.1em
+
+
+    &:hover
+      background: #2d4a7b
+
+      .contacts-content
+        display: none
+
+      .contacts-more-info
+        display: block
+        cursor: pointer
+
+
+
+    .contacts-content
+      font-size: 17px
+
+
+    .contacts-more-info
+      display: none
+      font-size: 17px
+      .label
+        font-size: 24px
+
+
+
+
+  .language-widget
+    float: right
+    width: 80px
+    height: 95px
+    padding-left: 40px
+    padding-top: 25px
+    background: rgba(23, 38, 63, 0.25)
+
+    font-family: 'CodePro-Light'
+    font-size: 27px
+    color: #fafafa
+    letter-spacing: 0.2em
+
+    .inactive
+      opacity: 0.1
+
+.content
+  position: absolute
+  top: 50%
+  left: 50%
+  margin-left: -440px
+  margin-top: -285px
+  width: 880px
+  height: 570px
+  //background: red
+
+  .title
+    color: #eaeaea
+    font-family: 'CodePro-Bold'
+    font-size: 51px
+    letter-spacing: 0.2em
+    margin-bottom: 60px
+
+    @media screen and (max-width: 1400px)
+      font-size: 40px
+      margin-bottom: 20px
+
+  .text
+    font-family: 'CodePro-Light'
+    font-size: 24px
+    letter-spacing: 0.1em
+    height: 350px
+    overflow-y: scroll
+    color: #fafafa
+
+    @media screen and (max-width: 1400px)
+      font-size: 18px
+
+    p
+      margin-bottom: 30px
+      text-indent: 1.5em
+
+    h6
+      margin-bottom: 30px
+
+    ul
+      margin-bottom: 20px
+      li
+        font-size: 19px
+        text-indent: 1.5em
+
+

@@ -1,0 +1,30 @@
+.topbar
+  .wrapper.clearfix
+    .logo
+      %a{href: root_path}
+        = image_tag 'logo.png'
+    .navigation
+      .nav{class: (params[:controller] == 'pages' and params[:action] == 'whoweare') ? 'active' : ''}
+        %a{href: '/who-we-are'}
+          Кто
+          %br
+          мы
+      .nav{class: (params[:controller] == 'pages' and params[:action] == 'whatwedo') ? 'active' : ''}
+        %a{href: '/what-we-do'}
+          Что
+          %br
+          мы
+          %br
+          делаем
+      .nav{class: (params[:controller] == 'pages' and params[:action] == 'howwework') ? 'active' : ''}
+        %a{href: '/how-we-work'}
+          Как
+          %br
+          мы
+          %br
+          работаем
+      .nav{class: (params[:controller] == 'pages' and params[:action] == 'whyzz') ? 'active' : ''}
+        %a{href: '/why-zz'}
+          Почему
+          %br
+          Z&Z

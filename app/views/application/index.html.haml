@@ -1,0 +1,42 @@
+.backgrounds
+  .background.moscow.active{active: :moscow, siblings: '.city-pekin', nextnext: 'dubai'}
+  .background.pekin{active: :pekin, siblings: '.city-moscow, .city-dubai', nextnext: 'delhi'}
+  .background.dubai{active: :dubai, siblings: '.city-pekin, .city-delhi', nextnext: 'singapure'}
+  .background.delhi{active: :delhi, siblings: '.city-dubai, .city-singapure', nextnext: 'barselona'}
+  .background.singapure{active: :singapure, siblings: '.city-delhi, .city-barselona', nextnext: 'berlin'}
+  .background.barselona{active: :barselona, siblings: '.city-singapure, .city-berlin', nextnext: 'warsaw'}
+  .background.berlin{active: :berlin, siblings: '.city-barselona, .city-warsaw', nextnext: 'hongkong'}
+  .background.warsaw{active: :warsaw, siblings: '.city-berlin, .city-hongkong', nextnext: 'moscow'}
+  .background.hongkong{active: :hongkong, siblings: '.city-warsaw, .city-moscow', nextnext: 'pekin'}
+
+
+
+= render partial: 'pages/navigation'
+
+.intro
+  .wrapper{style: 'position: relative;'}
+    .cities
+      .city.city-moscow{style: 'opacity: 1;'} Москва
+      .city.city-pekin{style: 'opacity: 0.7;'} Пекин
+      .city.city-dubai{style: 'opacity: 0.4;'} Дубаи
+      .city.city-delhi Дели
+      .city.city-singapure Сингапур
+      .city.city-barselona Барселона
+      .city.city-berlin Берлин
+      .city.city-warsaw Варшава
+      .city.city-hongkong ГонгКонг
+
+
+    .slogan
+      Мы
+      %br
+      Фокусируемся на
+      %br
+      Бизнес &
+      %br
+      Коммуникационном
+      %br
+      Дизайне
+
+
+= render partial: 'application/footer'

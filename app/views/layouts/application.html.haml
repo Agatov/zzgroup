@@ -1,0 +1,15 @@
+!!! 5
+%html
+  %head
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', :media => 'all'
+    = javascript_include_tag 'application'
+
+
+    -#= set_meta_tags site: 'My Site'
+    %title
+      ZZ
+
+  %body
+    = yield
