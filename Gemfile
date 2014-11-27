@@ -50,8 +50,8 @@ gem 'unicorn'
 
 gem 'breadcrumbs_on_rails'
 
-gem 'rmagick', :require => 'RMagick'
-gem 'carrierwave'
+# gem 'rmagick', :require => 'RMagick'
+# gem 'carrierwave'
 
 gem 'meta-tags'
 
