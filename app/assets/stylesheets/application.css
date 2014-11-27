@@ -10,6 +10,28 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require_self
  *= require reset
  *= require index
  */
+
+@font-face {
+  font-family: 'CodePro-Light';
+  src: url('public/fonts/code_pro_light.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CodePro-Bold';
+  src: url('public/fonts/code_pro_bold.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CodePro';
+  src: url('public/fonts/code_pro.otf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
