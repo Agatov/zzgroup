@@ -58,7 +58,7 @@ gem 'meta-tags'
 gem 'russian'
 
 
-# gem 'mysql2', group: :production
+gem 'mysql2', group: :production
 
 gem 'net-ssh', '~>2.7.0'
 gem 'capistrano', '~> 2.15.5', group: :development

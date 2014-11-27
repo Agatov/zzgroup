@@ -27,7 +27,7 @@ set :user, :root
 
 after 'deploy:update_code', 'deploy:bundle_install'
 after 'deploy:update_code', 'deploy:configure'
-after 'deploy:configure', 'deploy:migrate'
+# after 'deploy:configure', 'deploy:migrate'
 after 'deploy:configure', 'deploy:assets:precompile'
 after 'deploy:restart', 'deploy:cleanup'
 
