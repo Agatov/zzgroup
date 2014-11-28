@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   match 'what-we-do', to: 'pages#whatwedo', via: :get
   match 'how-we-work', to: 'pages#howwework', via: :get
   match 'why-zz', to: 'pages#whyzz', via: :get
+  match 'contacts', to: 'pages#map', via: :get
 
   resources :pages
 end

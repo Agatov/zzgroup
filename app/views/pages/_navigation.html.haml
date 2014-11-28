@@ -1,9 +1,9 @@
 .topbar
-  .wrapper.clearfix
+  .wrapper.clearfix{style: 'position: relative;'}
     .logo
       %a{href: root_path}
         = image_tag 'logo.png'
-    .navigation
+    .navigation{style: 'position: absolute; right: 0px;'}
       %a.nav{href: '/who-we-are', class: (params[:controller] == 'pages' and params[:action] == 'whoweare') ? 'active' : ''}
         Кто
         %br

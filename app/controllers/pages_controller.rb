@@ -14,4 +14,7 @@ class PagesController < ApplicationController
   def whyzz
   end
 
+  def map
+  end
+
 end

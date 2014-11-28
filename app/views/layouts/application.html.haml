@@ -4,12 +4,13 @@
     = csrf_meta_tags
 
     = stylesheet_link_tag    'application', :media => 'all'
+    %script{src: 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false'}
     = javascript_include_tag 'application'
 
 
     -#= set_meta_tags site: 'My Site'
     %title
-      ZZ
+      Z&Z Group
 
   %body
     = yield
