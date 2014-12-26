@@ -1,7 +1,4 @@
-.topblock
-  .backgrounds
-    .background.dubai
-
+.topblock.dubai
   = render partial: 'pages/navigation'
 
   .title
@@ -46,26 +43,5 @@
 
 
 .inner-footer.striped.clearfix
-  .wrapper
-    %ul.bottom-navigation
-      %li
-        %a{href: '#'} Главная
-
-      %li
-        %a{href: '#'} Кто мы
-
-      %li
-        %a{href: '#'} Как мы работаем
-
-      %li
-        %a{href: '#'} Контакты
-
-      %li
-        %a{href: '#'} Что мы делаем
-
-      %li
-        %a{href: '#'} Почему Z&Z
-
-    .footer-logo
-      = image_tag 'logo.png'
+  = render partial: 'application/inner_footer_content'
 

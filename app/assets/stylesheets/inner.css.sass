@@ -3,14 +3,59 @@
   height: 800px
   text-align: center
 
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    height: 600px
+
+
+  &.moscow
+    background: asset-url('backgrounds/moscow.jpg') no-repeat
+    background-size: cover
+
+  &.pekin
+    background: asset-url('backgrounds/pekin.jpg') no-repeat
+    background-size: cover
+
+  &.dubai
+    background: asset-url('backgrounds/dubai.jpg') no-repeat
+    background-size: cover
+
+  &.delhi
+    background: asset-url('backgrounds/delhi.jpg') no-repeat
+    background-size: cover
+
+  &.singapure
+    background: asset-url('backgrounds/singapure.jpg') no-repeat
+    background-size: cover
+
+  &.barselona
+    background: asset-url('backgrounds/barselona.jpg') no-repeat
+    background-size: cover
+
+  &.berlin
+    background: asset-url('backgrounds/berlin.jpg') no-repeat
+    background-size: cover
+
+  &.varshava
+    background: asset-url('backgrounds/warsaw.jpg') no-repeat
+    background-size: cover
+
+  &.hongkong
+    background: asset-url('backgrounds/hong_kong.jpg') no-repeat
+    background-size: cover
+
   .title
     color: #eaeaea
     font-family: 'CodePro-Bold'
     font-size: 51px
     letter-spacing: 0.2em
+    line-height: 1.5
 
     margin-top: 250px
     margin-bottom: 90px
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      margin-top: 50px
+      font-size: 28px
 
 
   .subtitle
@@ -21,6 +66,10 @@
     line-height: 1.3
     height: 350px
     color: #fafafa
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      width: 300px
+      font-size: 20px
 
 
 
@@ -57,10 +106,17 @@
     line-height: 1.3
     color: #eaeaea
 
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      width: 300px
+      margin: 0px auto
+
 
 .thumbnails
   width: 1120px
   margin: 0px auto
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    width: 300px
 
   li
     float: left
@@ -75,6 +131,15 @@
     line-height: 1.5
     color: #eaeaea
 
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      width: 300px
+
+
+    &.mobile
+      display: block
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+        display: none
+
     .bold
       font-family: 'HelveticaNeue-Bold'
 
@@ -85,7 +150,16 @@
 
 
 .brands
-  margin: 0px auto
+  text-align: center
+  margin: 100px auto
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    margin: 50px auto
+
+  img
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      width: 300px
+
 
 
 .inner-footer
@@ -93,18 +167,35 @@
   padding: 100px 0
   background: #202331
 
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    padding: 50px 0
+
   &.striped
     background: #17263f
+
+  &.mobile
+    display: none
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      display: block
 
   .bottom-navigation
     float: left
     width: 750px
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      float: none
+      margin: 0px auto
+      width: 300px
 
     li
       width: 250px
       display: inline
       float: left
       padding-bottom: 20px
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+        width: 150px
+        //margin-right: 10px
 
       a
         font-family: 'HelveticaNeue-Light'
@@ -116,6 +207,9 @@
     float: right
     width: 80px
     height: 70px
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      display: none
 
     img
       width: 80px

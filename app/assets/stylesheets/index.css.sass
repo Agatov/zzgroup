@@ -52,9 +52,24 @@ body
   min-height: 600px
 
 
-.wrapper
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    min-width: 320px
+
+
+
+.index-wrapper
   width: 80%
   margin: 0px auto
+
+.wrapper
+  width: 1120px
+  margin: 0px auto
+
+  @media screen and (max-width: 640px)
+    width: 320px
+
+  @media screen and (max-device-width: 320px)
+    width: 320px
 
 .clearfix
   &:after
@@ -130,11 +145,12 @@ body
   width: 100%
   height: 200px
   z-index: 5
-  //background: #ccc
 
   @media screen and (max-height: 750px)
-    //background: red
     height: 100px
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    padding-top: 80px
 
 
 
@@ -143,6 +159,14 @@ body
     position: relative
     width: 130px
     height: 200px
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      width: 100px
+      float: none
+      margin: 0px auto
+
+
+
 
     @media screen and (max-height: 750px)
       height: 100px
@@ -160,6 +184,9 @@ body
 
   .navigation
     float: right
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      display: none
 
     .nav
       float: left
@@ -202,7 +229,14 @@ body
 
 
   .cities
+
     padding: 100px 0
+
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      display: none
+
+
     .city
       padding-left: 12px
       color: #eaeaea
@@ -240,6 +274,15 @@ body
     margin-left: -270px
     font-size: 42px
 
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    width: 300px
+    margin: 0px auto
+    position: static
+    font-size: 20px
+    line-height: 1.5
+    margin-top: 75px
+
+
 
 .footer
   position: fixed
@@ -255,6 +298,9 @@ body
 
   @media screen and (max-height: 900px)
     height: 40px
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    display: none
 
   .contacts-widget
     float: right
