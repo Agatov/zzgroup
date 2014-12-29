@@ -1,10 +1,18 @@
-#map{style: 'position: absolute; width: 100%; height: 100%; z-index: 0'}
+#map{style: 'position: absolute; width: 100%; height: 100%; z-index: 0; opacity: 0.6'}
   
 = render partial: 'pages/navigation'
 
 #contacts
   .label
-    Контакты
+    Напишите
+    %br
+    нам
+
+  .form
+    %input{type: :text, placeholder: 'Имя'}
+    %input{type: :text, placeholder: 'Телефон'}
+    %textarea{placeholder: 'Введите ваше сообщение'}
+    .button Отправить
 
   .info
     129226, Москва,
@@ -13,3 +21,6 @@
     %br
     %br
     8 495 800 80 80
+
+.inner-footer.striped.clearfix.mobile
+  = render partial: 'application/inner_footer_content'

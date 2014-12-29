@@ -332,6 +332,10 @@ body
           cursor: pointer
 
 
+          color: #fff
+          text-decoration: none
+
+
     &.small
       display: none
       width: 630px
@@ -380,23 +384,88 @@ body
       opacity: 0.1
 
 
+#map
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    display: none
+
 #contacts
   width: 450px
-  height: 230px
+  height: 520px
   padding: 55px
   background: #17263f
 
   color: #fafafa
 
   position: fixed
-  bottom: 10%
-  right: 5%
+  bottom: 0px
+  right: 0px
+
+  @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+    width: 300px
+    position: static
+    padding: 55px 0
+    margin: 0px auto
+    height: 450px
+
 
   .label
     font-size: 51px
     font-family: 'CodePro-Bold'
+    letter-spacing: 0.2em
     
-    margin-bottom: 75px
+    margin-bottom: 25px
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      font-size: 24px
+
+  .form
+    margin-bottom: 25px
+
+    @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+      margin-bottom: 50px
+
+    input
+      width: 340px
+      height: 40px
+      background: #fff
+      color: #17263f
+      font-size: 16px
+      padding-left: 10px
+      margin-bottom: 10px
+      outline: none
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+        width: 280px
+
+    textarea
+      width: 335px
+      height: 100px
+      padding: 10px
+      background: #fff
+      color: #17263f
+      font-size: 16px
+      outline: none
+      margin-bottom: 10px
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+        width: 280px
+
+    .button
+      width: 355px
+      height: 40px
+      background: #b3e79f
+      text-align: center
+      line-height: 40px
+      color: #fff
+      font-size: 16px
+      font-family: 'HelveticaNeue-Bold'
+      cursor: pointer
+
+      @media screen and (min-device-width: 320px) and (max-device-width: 568px)
+        width: 300px
+
+
+
 
   .info
     font-size: 25px
