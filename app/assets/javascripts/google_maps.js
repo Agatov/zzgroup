@@ -45,7 +45,7 @@ function initialize() {
         position: new google.maps.LatLng(55.832136, 37.6515513),
         map: map,
         icon: {
-            url: 'assets/marker.png',
+            url: 'marker.png',
             size: new google.maps.Size(67,98),
             origin: new google.maps.Point(0,0),
             anchor: new google.maps.Point(35, 95)
