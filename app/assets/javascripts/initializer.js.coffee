@@ -4,6 +4,11 @@ $ ->
   setInterval('ololo()', 7000)
 
 
+  $('.send-form').on 'click', ->
+    #$('.label').hide()
+    $('.form').hide()
+    $('.thank-you').show()
+
 
 
 window.ololo = ->
