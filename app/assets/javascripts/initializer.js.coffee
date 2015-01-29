@@ -22,7 +22,7 @@ window.ololo = ->
   $('.city').css('opacity', '0.1')
   $(".city-#{$(next).attr('active')}").css('opacity', '1')
   $("#{next.attr('siblings')}").css('opacity', '0.7')
-  $(".city-#{$(next).attr('nextnext')}").css('opacity', '0.4')
+  $(".city-#{$(next).attr('nextnext')}").css('opacity', '0.6')
 
   active.fadeOut(1500, ->
 
